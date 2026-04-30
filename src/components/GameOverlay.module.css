@@ -1,0 +1,92 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(2, 4, 9, 0.68);
+  backdrop-filter: blur(5px);
+}
+
+.countdown {
+  color: #eef7ff;
+  font-size: clamp(4rem, 18vw, 11rem);
+  line-height: 1;
+  text-shadow:
+    0 0 18px rgba(53, 217, 255, 0.8),
+    0 0 42px rgba(182, 108, 255, 0.35);
+}
+
+.dialog {
+  display: grid;
+  gap: 18px;
+  width: min(420px, calc(100vw - 48px));
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(9, 13, 23, 0.96);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.42);
+}
+
+.dialog h2,
+.dialog p {
+  margin: 0;
+}
+
+.dialog h2 {
+  color: #eef7ff;
+  font-size: 1.8rem;
+}
+
+.kicker {
+  color: #49e86f;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.results {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+}
+
+.results div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  color: #eef7ff;
+}
+
+.results dt {
+  color: #8fa7bd;
+}
+
+.results dd {
+  margin: 0;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.actions button {
+  min-width: 118px;
+  min-height: 42px;
+  border: 1px solid rgba(53, 217, 255, 0.45);
+  border-radius: 6px;
+  color: #eef7ff;
+  background: rgba(53, 217, 255, 0.14);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.actions button:hover,
+.actions button:focus-visible {
+  outline: none;
+  border-color: #35d9ff;
+}

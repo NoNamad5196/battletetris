@@ -1,0 +1,47 @@
+.preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  width: 64px;
+  aspect-ratio: 1;
+}
+
+.cell {
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.kindI {
+  background: #35d9ff;
+  box-shadow: 0 0 10px rgba(53, 217, 255, 0.65);
+}
+
+.kindO {
+  background: #f6df42;
+  box-shadow: 0 0 10px rgba(246, 223, 66, 0.65);
+}
+
+.kindT {
+  background: #b66cff;
+  box-shadow: 0 0 10px rgba(182, 108, 255, 0.65);
+}
+
+.kindS {
+  background: #49e86f;
+  box-shadow: 0 0 10px rgba(73, 232, 111, 0.65);
+}
+
+.kindZ {
+  background: #ff4d6d;
+  box-shadow: 0 0 10px rgba(255, 77, 109, 0.65);
+}
+
+.kindJ {
+  background: #5a86ff;
+  box-shadow: 0 0 10px rgba(90, 134, 255, 0.65);
+}
+
+.kindL {
+  background: #ff9f3d;
+  box-shadow: 0 0 10px rgba(255, 159, 61, 0.65);
+}

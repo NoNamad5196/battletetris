@@ -1,0 +1,149 @@
+.panel {
+  display: grid;
+  gap: 16px;
+  padding: 16px;
+  border: 1px solid rgba(53, 217, 255, 0.22);
+  border-radius: 8px;
+  background: rgba(7, 12, 22, 0.92);
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.header h2,
+.header p,
+.profileHeader h3,
+.profileHeader p {
+  margin: 0;
+}
+
+.header h2 {
+  color: #eef7ff;
+  font-size: 1.12rem;
+  letter-spacing: 0;
+}
+
+.header p,
+.profileHeader p {
+  color: #8fa7bd;
+  font-size: 0.82rem;
+}
+
+.resetButton {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  color: #eef7ff;
+  background: rgba(255, 255, 255, 0.06);
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.resetButton:hover,
+.resetButton:focus-visible,
+.keyButton:hover,
+.keyButton:focus-visible {
+  border-color: #35d9ff;
+  outline: none;
+}
+
+.profileGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.profile {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.profileHeader {
+  display: grid;
+  gap: 4px;
+}
+
+.profileHeader h3 {
+  color: #7ce7ff;
+  font-size: 0.92rem;
+}
+
+.bindings {
+  display: grid;
+  gap: 8px;
+}
+
+.bindingRow {
+  display: grid;
+  grid-template-columns: minmax(82px, 1fr) minmax(0, 1.6fr);
+  align-items: center;
+  gap: 8px;
+}
+
+.actionLabel {
+  color: #d7e8f5;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.keyList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-end;
+}
+
+.keyButton {
+  min-width: 44px;
+  min-height: 30px;
+  padding: 0 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 6px;
+  color: #eef7ff;
+  background: rgba(255, 255, 255, 0.06);
+  font-size: 0.75rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.addButton {
+  min-width: 30px;
+  color: #7ce7ff;
+}
+
+.pending {
+  min-width: 76px;
+  border-color: #49e86f;
+  color: #06120a;
+  background: #49e86f;
+}
+
+@media (max-width: 980px) {
+  .profileGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .bindingRow {
+    grid-template-columns: 1fr;
+  }
+
+  .keyList {
+    justify-content: flex-start;
+  }
+}
